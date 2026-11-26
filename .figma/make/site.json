@@ -1,0 +1,14 @@
+{
+  "title": "Chez Dany - Sabores Di Nós Terra",
+  "description": "Sabores di nós terra — cozinha tradicional cabo-verdiana no Chez Dany, Mindelo: pratos do dia, menu completo e reservas.",
+  "robots": {
+    "index": true
+  },
+  "icons": {
+    "icon": "/favicon-chez-dany-mindelo.png"
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}

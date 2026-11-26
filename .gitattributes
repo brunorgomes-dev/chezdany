@@ -1,0 +1,15 @@
+# Normalização de fim de linha
+* text=auto eol=lf
+
+# Arquivos binários (sem diff/merge de texto, sem LFS)
+*.png    binary
+*.jpg    binary
+*.jpeg   binary
+*.gif    binary
+*.ico    binary
+*.webp   binary
+*.pdf    binary
+*.woff   binary
+*.woff2  binary
+*.ttf    binary
+*.otf    binary
