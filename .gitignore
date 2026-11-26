@@ -19,6 +19,4 @@ logs/
 # beside it.
 /.plugins/
 /.opencode-skills/
-
 pnpm-lock.yaml
-

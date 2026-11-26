@@ -15,68 +15,90 @@ type MenuItem = { name: string; price: string; description?: string }
 type MenuGroup = { title: string; items: MenuItem[] }
 
 const fullMenu: MenuGroup[] = [
+  { title: 'Bafas', items: [
+    { name: 'Batatas fritas recheadas', price: '400' },
+    { name: 'Moreia frita (3 un.)', price: '600' },
+    { name: 'Calamares dourados', price: '500', description: 'Servidos com molho tártaro.' },
+    { name: 'Misto de pastéis, rissóis e croquetes', price: '600' },
+    { name: 'Búzios', price: '900' },
+    { name: 'Percebes', price: '700', description: 'Disponíveis dependendo da época.' },
+    { name: 'Camarões com azeite e alho', price: '1100' },
+  ]},
   { title: 'Entradas', items: [
-    { name: 'Pastéis de Bacalhau', price: '500', description: '3 unidades crocantes, recheadas com bacalhau e peixe seco.' },
-    { name: 'Tártaro de Peixe', price: '900', description: 'Peixe do dia preparado com leite de coco e abacate.' },
-    { name: 'Panados de Chouriço', price: '700', description: 'Chouriço de sangue panado, chutney de papaia e pickles de cebola roxa.' },
-    { name: 'Paté de Pato', price: '850', description: 'Paté caseiro com pimenta rosa de Santo Antão, servido com tostas.' },
+    { name: 'Sopa do dia', price: '250' },
+    { name: 'Ovos cozidos com maionese caseira', price: '300' },
+    { name: 'Tártaro de peixe do dia', price: '800' },
+    { name: 'Panados de chouriço de sangue', price: '700', description: 'Chutney de papaia e pickles de cebola roxa.' },
+    { name: 'Pica-pau de porco nacional e tostas', price: '700' },
   ]},
   { title: 'Pratos', items: [
-    { name: 'Feijoada do Mar', price: '2200', description: 'Búzios, camarão nacional, lula, polvo, peixe do dia e chouriço, acompanhada de arroz.' },
-    { name: 'Polvo Grelhado', price: '2400', description: 'Batatas assadas, salada de pimentos grelhados e ketchup de pimentão vermelho.' },
-    { name: 'Hambúrguer Chez Dany', price: '1200', description: 'Bife de novilho, molho tártaro, cebola caramelizada, cornichons, alface e tomate.' },
-    { name: 'Lombo de Porco Assado', price: '1900', description: 'Porco nacional assado durante 5 horas, creme de soja, legumes e pickles.' },
-    { name: 'Bife de Atum', price: '1200', description: 'Atum meio cozido com sésamo, vinagrete de soja e legumes salteados.' },
-  ]},
-  { title: 'Saladas', items: [
-    { name: 'Salada Tropical', price: '1350', description: 'Espetada de camarão e tomate, vinagrete de manga, alface, cenoura, ananás e abacate.' },
+    { name: 'Meio frango grelhado', price: '900', description: 'Arroz e batata frita caseira.' },
+    { name: 'Wok de frango / camarão / vegetariano', price: '1000 / 1200 / 800', description: 'Noodles, legumes salteados, sementes de sésamo e molho de soja.' },
+    { name: 'Picanha de vaca grelhada', price: '1900', description: 'Arroz, batatas fritas e feijão preto.' },
+    { name: 'Hambúrguer Chez Dany', price: '1200', description: 'Bife de novilho, molho tártaro, cebola roxa caramelizada, cornichons, alface, tomate, batata frita e pão caseiro.' },
+    { name: 'Polvo grelhado', price: '2400', description: 'Batatas assadas, salada de pimentos grelhados e ketchup de pimentão vermelho.' },
+    { name: 'Bife de atum meio cozido', price: '1200', description: 'Sementes de sésamo, vinagrete de molho de soja e legumes salteados.' },
+    { name: 'Lulas grelhadas na chapa', price: '1300', description: 'Molho vierge e puré de inhame.' },
   ]},
   { title: 'Sobremesas', items: [
-    { name: 'Mousse de Chocolate', price: '500', description: 'Mousse cremosa finalizada com amêndoas.' },
-    { name: 'Panacota de Manga', price: '400', description: 'Sobremesa cremosa e delicada com o sabor tropical da manga.' },
-    { name: 'Queijo Terra', price: '450', description: 'Queijo Terra servido com doce de papaia.' },
-    { name: 'Café Gourmand', price: '500' },
+    { name: 'Mousse de chocolate com amêndoas', price: '500' },
+    { name: 'Panacota de frutos vermelhos', price: '400' },
+    { name: 'Queijo Terra com doce de papaia', price: '450' },
+    { name: 'Cheesecake da Dany', price: '600' },
+    { name: 'Gelado de bolacha', price: '400' },
+    { name: 'Café gourmand', price: '650' },
   ]},
-  { title: 'Águas & Softs', items: [
-    { name: 'Água Caramulo Premium 0,5L / 1L', price: '150 / 250' }, { name: 'Água das Pedras 25cl', price: '220' },
-    { name: 'Água Tónica 33cl', price: '220' }, { name: 'Sumo “Da Feris” 20cl', price: '220' },
-    { name: 'Fanta / Sprite / Coca-Cola 50cl', price: '220' }, { name: 'Malta Actimalt', price: '250' },
-    { name: 'Ice Tea Caseiro', price: '500' }, { name: 'Sumo de Laranja Natural', price: '400' },
-    { name: 'Sumo de Papaia ou Manga Natural', price: '350' },
+  { title: 'Águas', items: [
+    { name: 'Água mineral Caramulo Premium 0,5L', price: '150' },
+    { name: 'Água mineral Caramulo Premium 1L', price: '250' },
+    { name: 'Água das Pedras 25cl', price: '180' },
+    { name: 'Água das Pedras 75cl', price: '300' },
+    { name: 'Água Tónica Schweppes 33cl', price: '200' },
   ]},
   { title: 'Bebidas Quentes', items: [
-    { name: 'Café Expresso / Descafeinado', price: '100' }, { name: 'Café Pingado', price: '120' },
-    { name: 'Americano', price: '150' }, { name: 'Cappuccino', price: '250' }, { name: 'Meia de Leite', price: '180' },
-    { name: 'Chá', price: '200' }, { name: 'Chocolate Quente', price: '400' },
+    { name: 'Café Expresso', price: '100' }, { name: 'Café Pingado', price: '120' },
+    { name: 'Americano', price: '120' }, { name: 'Descafeinado', price: '100' },
+    { name: 'Cappuccino', price: '250' }, { name: 'Meia de Leite', price: '160' },
+    { name: 'Galão', price: '180' }, { name: 'Chá', price: '120' }, { name: 'Chocolate Quente', price: '350' },
   ]},
-  { title: 'Aperitivos', items: [
-    { name: 'Martini Rosso / Bianco 5cl', price: '400' }, { name: 'Ricard 2cl', price: '450' },
-    { name: 'Licor Beirão', price: '450' }, { name: 'Vinho do Porto CADAO 5cl', price: '350' },
-    { name: 'Whiskey Grants 4cl', price: '600' }, { name: 'Gin GREAU Bio 4cl', price: '1100' },
-    { name: 'XPTO Dry Gin 4cl', price: '600' }, { name: 'Get 27', price: '350' },
-  ]},
-  { title: 'Vinhos Brancos & Rosés', items: [
-    { name: 'TUD DRET Frisante 14cl / 75cl', price: '350 / 1500' }, { name: 'PILON Branco 14cl / 75cl', price: '370 / 1850' },
-    { name: 'CHA Vinho do Fogo Branco 14cl / 37,5cl / 75cl', price: '720 / 1800 / 2800' },
-    { name: 'PILON Rosé 14cl / 75cl', price: '370 / 1850' },
-  ]},
-  { title: 'Vinhos Tintos & Espumantes', items: [
-    { name: 'PILON Tinto 14cl / 75cl', price: '370 / 1850' }, { name: 'MORABEZA Premium 14cl / 75cl', price: '400 / 2200' },
-    { name: 'CHA Vinho do Fogo Tinto 14cl / 37,5cl / 75cl', price: '720 / 1800 / 2800' },
-    { name: 'FIUZA 3 Castas Nature 14cl / 75cl', price: '380 / 1900' },
+  { title: 'Softs', items: [
+    { name: 'Sumo Compal 33cl', price: '200', description: 'Manga, pêssego, maçã, pera ou tutti-frutti.' },
+    { name: 'Fanta Laranja / Morango 50cl', price: '200' }, { name: 'Sprite 50cl', price: '200' },
+    { name: 'Coca-Cola 50cl', price: '200' }, { name: 'Malta Actimalt', price: '250' },
+    { name: 'Ice Tea Caseiro', price: '400' }, { name: 'Ginger Detox', price: '300' },
+    { name: 'Sumo de Laranja Natural', price: '400' }, { name: 'Sumo de Papaia Natural', price: '350' },
+    { name: 'Sumo de Manga Natural', price: '350' },
   ]},
   { title: 'Cervejas', items: [
-    { name: 'Strela Kriola 25cl', price: '200' }, { name: 'Strela Kriola Imperial 25cl / 50cl', price: '200 / 400' },
-    { name: 'Super Bock Mini', price: '200' }, { name: 'Sommersby Cidra 20cl', price: '280' },
+    { name: 'Strela Kriola 25cl', price: '180' }, { name: 'Strela Kriola Imperial 25cl', price: '180' },
+    { name: 'Strela Kriola Imperial 50cl', price: '360' }, { name: 'Super Bock Mini', price: '180' },
+  ]},
+  { title: 'Aperitivos & Digestivos', items: [
+    { name: 'Martini Rosso 5cl', price: '400' }, { name: 'Martini Bianco 5cl', price: '400' },
+    { name: 'Ricard 2cl', price: '450' }, { name: 'Licor Beirão', price: '450' },
+    { name: 'Vinho do Porto CADAO 5cl', price: '350' }, { name: 'Whiskey Grants “Triple Wood” 4cl', price: '600' },
+    { name: 'Gin GREAU Bio 4cl', price: '1100' }, { name: 'XPTO Dry Gin 4cl', price: '600' },
+    { name: 'Get 27', price: '700' },
   ]},
   { title: 'Cocktails', items: [
     { name: 'Caipirinha', price: '500' }, { name: 'Caipirinha de Manga ou Maracujá', price: '600' },
     { name: 'Caipi Black', price: '600' }, { name: 'Mojito', price: '550' }, { name: 'Piña Colada', price: '700' },
     { name: 'Aperol Spritz / Gin Tonic', price: '700' }, { name: 'Virgin Mojito / Virgin Colada', price: '400' },
   ]},
-  { title: 'Grogue & Ponches', items: [
-    { name: 'Grogue Branca de Sintanton 4cl', price: '200' }, { name: 'Contrabond / Contrabond Velha', price: '400 / 500' },
-    { name: 'Ponche de Mel, Coco ou Maracujá', price: '300' }, { name: 'Xtomperod', price: '450' },
+  { title: 'Vinhos', items: [
+    { name: 'TUD DRET, vinho frisante — 14cl / 75cl', price: '350 / 1500' },
+    { name: 'PILON branco — 14cl / 75cl', price: '370 / 1850' },
+    { name: 'CHÃ, vinho do Fogo branco — 14cl / 37,5cl / 75cl', price: '720 / 1800 / 2800' },
+    { name: 'PILON tinto — 14cl / 75cl', price: '370 / 1850' },
+    { name: 'MORABEZA Premium tinto — 14cl / 75cl', price: '400 / 2200' },
+    { name: 'CHÃ, vinho do Fogo tinto — 14cl / 37,5cl / 75cl', price: '720 / 1800 / 2800' },
+    { name: 'PILON rosé — 14cl / 75cl', price: '370 / 1850' },
+    { name: 'FIUZA 3 Castas Nature espumante — 14cl / 75cl', price: '380 / 1900' },
+  ]},
+  { title: 'Grogues & Ponches', items: [
+    { name: 'Grogue Branca de Sintanton', price: '200' }, { name: 'Contrabond', price: '400' },
+    { name: 'Contrabond Velha', price: '500' }, { name: 'Xtomperod', price: '450' },
+    { name: 'Ponche Tia Maria — Mel, Coco, Maracujá, Tangerina, Calabacera ou Laranja', price: '300' },
   ]},
 ]
 
@@ -121,8 +143,8 @@ function MenuPage() {
   return (
     <main className="full-menu-page">
       <header className="site-header menu-page-header">
-        <a className="brand" href="/" aria-label="Chez Dany — início"><img src="/chezdanyclaro-removebg-preview.png" alt="Chez Dany" /></a>
-        <nav className="nav"><a href="/">Home</a><a href="/#sobre">Sobre</a><a href="/menu">Menu</a><a href="/#pratododia">Pratos do dia</a></nav>
+        <a className="brand" href="/" aria-label="Chez Dany — início"><img src="/images/chezdanyclaro-removebg-preview.png" alt="Chez Dany" /></a>
+        <nav className="nav"><a href="/">Home</a><a href="/#sobre">Sobre</a><a href="/menu">Menu</a><a href="/#pratododia">Pequeno-almoço</a></nav>
         <a className="header-cta" href={whatsappReservation} target="_blank" rel="noreferrer">Reservar <Arrow /></a>
       </header>
       <section className="menu-hero">
@@ -148,7 +170,7 @@ function MenuPage() {
       </section>
       <footer>
         <div className="footer-top compact">
-          <img className="footer-logo" src="/chezdanyclaro-removebg-preview.png" alt="Chez Dany" />
+          <img className="footer-logo" src="/images/chezdanyclaro-removebg-preview.png" alt="Chez Dany" />
           <div><span>Contato</span><p>+238 232 32 39<br />+238 970 92 50</p></div>
           <div><span>Siga-nos</span><SocialLinks /></div>
         </div>
@@ -170,13 +192,13 @@ export default function App() {
     <main>
       <header className="site-header">
         <a className="brand" href="#inicio" aria-label="Chez Dany — início">
-          <img src="/chezdanyclaro-removebg-preview.png" alt="Chez Dany" />
+          <img src="/images/chezdanyclaro-removebg-preview.png" alt="Chez Dany" />
         </a>
         <nav className={menuOpen ? 'nav open' : 'nav'} aria-label="Navegação principal">
           <a href="#inicio" onClick={closeMenu}>Home</a>
           <a href="#sobre" onClick={closeMenu}>Sobre</a>
           <a href="/menu" onClick={closeMenu}>Menu</a>
-          <a href="#pratododia" onClick={closeMenu}>Pratos do dia</a>
+          <a href="#pratododia" onClick={closeMenu}>Pequeno-almoço</a>
         </nav>
         <a className="header-cta" href={whatsappReservation} target="_blank" rel="noreferrer">Reservar <Arrow /></a>
         <button className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)} aria-expanded={menuOpen} aria-label="Abrir menu">
@@ -185,7 +207,7 @@ export default function App() {
       </header>
 
       <section className="hero" id="inicio">
-        <img className="hero-bg" src="/gastronomia-cabo-verde-restaurante-chez-dany-04-blur1.jpeg" alt="" />
+        <img className="hero-bg" src="/images/gastronomia-cabo-verde-restaurante-chez-dany-04-blur1.jpeg" alt="" />
         <div className="hero-shade"></div>
         <div className="hero-content">
           <p className="eyebrow light">Restaurante • Mindelo, Cabo Verde</p>
@@ -201,8 +223,8 @@ export default function App() {
 
       <section className="about section" id="sobre">
         <div className="about-collage">
-          <img className="about-main" src="/chef-dany-restaurante-cabo-verde-15.jpeg" alt="Chef Dany preparando um prato" />
-          <img className="about-small" src="/comida-cabo-verdiana-chez-dany-12.jpeg" alt="Prato tradicional do Chez Dany" />
+          <img className="about-main" src="/images/chef-dany-restaurante-cabo-verde-15.jpeg" alt="Chef Dany preparando um prato" />
+          <img className="about-small" src="/images/comida-cabo-verdiana-chez-dany-12.jpeg" alt="Prato tradicional do Chez Dany" />
           <div className="years"><strong>15</strong><span>anos de<br />experiência</span></div>
         </div>
         <div className="about-copy">
@@ -224,21 +246,21 @@ export default function App() {
         <div className="daily-heading">
           <div>
             <p className="eyebrow">Todos os dias, algo especial</p>
-            <h2>Nossos <em>pratos do dia</em></h2>
+            <h2>Nosso <em>pequeno-almoço</em></h2>
           </div>
           <p>Nossa cozinha acompanha os produtos disponíveis e a inspiração da chef, criando sugestões que valorizam os sabores de Cabo Verde.</p>
         </div>
         <div className="food-gallery">
           <article className="food-card large">
-            <img src="/kachupa-chez-dany.png" alt="Cachupa do Chez Dany" />
+            <img src="/images/kachupa-chez-dany.png" alt="Cachupa do Chez Dany" />
             <div><span>Prato assinatura</span><h3>Cachupa com alma</h3></div>
           </article>
           <article className="food-card">
-            <img src="/tradicao.jpeg" alt="Tradição à nossa maneira — prato típico cabo-verdiano" />
+            <img src="/images/tradicao.jpeg" alt="Prato típico cabo-verdiano" />
             <div><span>Sabores locais</span><h3>Tradição à nossa maneira</h3></div>
           </article>
           <article className="food-card">
-            <img src="/pequeno-almoco-cabo-verde.jpeg" alt="Pequeno-almoço Chez Dany" />
+            <img src="/images/pequeno-almoco-cabo-verde.jpeg" alt="Pequeno-almoço Chez Dany" />
             <div><span>Comece bem o dia</span><h3>Pequeno-almoço</h3></div>
           </article>
         </div>
@@ -264,7 +286,7 @@ export default function App() {
       </section>
 
       <section className="reservation">
-        <img src="/chef-dany-restaurante-cabo-verde-10.jpeg" alt="" />
+        <img src="/images/chef-dany-restaurante-cabo-verde-10.jpeg" alt="" />
         <div className="reservation-shade"></div>
         <div className="reservation-content">
           <p className="eyebrow light">Uma mesa à sua espera</p>
@@ -276,7 +298,7 @@ export default function App() {
 
       <footer>
         <div className="footer-top">
-          <img className="footer-logo" src="/chezdanyclaro-removebg-preview.png" alt="Chez Dany" />
+          <img className="footer-logo" src="/images/chezdanyclaro-removebg-preview.png" alt="Chez Dany" />
           <div><span>Localização</span><p>Chã de Cemitério,<br />Rua do Campo de Amarante</p></div>
           <div><span>Atendimento</span><p>Seg — Qui: 07h–22h<br />Sex: 07h–23h<br />Sáb: 09h–23h<br />Dom: 09h–22h</p></div>
           <div><span>Contato</span><p><a href="tel:+2382323239">+238 232 32 39</a><br /><a href="tel:+2389709250">+238 970 92 50</a></p></div>

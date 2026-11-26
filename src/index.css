@@ -102,7 +102,7 @@ footer { background: #102b23; color: white; padding: 72px 7vw 26px; }
 .social-links a { color: rgba(255,255,255,.72); font-size: 12px; display: flex; justify-content: space-between; border-bottom: 1px solid rgba(255,255,255,.12); padding-bottom: 8px; }
 
 .menu-page-header { position: absolute; }
-.menu-hero { min-height: 540px; padding: 190px 7vw 90px; color: white; background: linear-gradient(rgba(9,27,20,.72), rgba(9,27,20,.82)), url('https://chezdany.cv/wp-content/uploads/2022/12/page.jpg') center/cover; }
+.menu-hero { min-height: 540px; padding: 190px 7vw 90px; color: white; background: linear-gradient(rgba(9,27,20,.72), rgba(9,27,20,.82)), url('/images/gastronomia-cabo-verde-restaurante-chez-dany-04-blur1.jpeg') center/cover; }
 .menu-hero h1 { font-size: clamp(72px, 9vw, 132px); }
 .menu-hero > p:last-child { max-width: 570px; color: rgba(255,255,255,.76); line-height: 1.7; margin-top: 28px; }
 .full-menu { min-height: 750px; display: grid; grid-template-columns: 290px 1fr; padding: 100px 7vw 120px; gap: 8vw; background: var(--paper); }
@@ -168,8 +168,8 @@ footer { background: #102b23; color: white; padding: 72px 7vw 26px; }
   .footer-top { grid-template-columns: 1fr; gap: 38px; }
   .footer-top.compact { grid-template-columns: 1fr; }
   .footer-bottom { flex-direction: column; gap: 12px; }
+  .scroll-top { right: 16px; bottom: 16px; }
   .menu-hero { min-height: 470px; padding-top: 160px; }
   .category-nav { grid-template-columns: repeat(2, 1fr); }
   .category-heading > span { position: static; display: block; margin-top: 18px; }
-  .scroll-top { right: 16px; bottom: 16px; }
 }

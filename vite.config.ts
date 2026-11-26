@@ -17,8 +17,7 @@ export default defineConfig(({ mode }) => {
     build: {
       sourcemap: emitSourcemaps ? 'inline' : false,
       minify: !emitSourcemaps,
-      // JS e CSS na raiz (mesmo nível das imagens) — evita problemas
-      // com pastas/permissões em hospedagens compartilhadas.
+      // JS e CSS na raiz, com cache longo via vercel.json
       rollupOptions: {
         output: {
           entryFileNames: 'app-[hash].js',
